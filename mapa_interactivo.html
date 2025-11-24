@@ -1,0 +1,2620 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_9c0327f06ed5f992363b39fdfc285e9b {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_9c0327f06ed5f992363b39fdfc285e9b" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_9c0327f06ed5f992363b39fdfc285e9b = L.map(
+                "map_9c0327f06ed5f992363b39fdfc285e9b",
+                {
+                    center: [2.479243697966216, -76.9345124543108],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 7,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_3e1cd43698fc794534f35295607e2752 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_3e1cd43698fc794534f35295607e2752.addTo(map_9c0327f06ed5f992363b39fdfc285e9b);
+        
+    
+            var circle_marker_39e35fd5dad7b8be621e21f6ee0d3069 = L.circleMarker(
+                [2.471704362, -76.591944191],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 129.0, "stroke": true, "weight": 3}
+            ).addTo(map_9c0327f06ed5f992363b39fdfc285e9b);
+        
+    
+            circle_marker_39e35fd5dad7b8be621e21f6ee0d3069.bindTooltip(
+                `<div>
+                     Municipio: POPAYÁN
+Prestadores SI: 62
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_4d239bf503f0bf00bece268034b329fd = L.circleMarker(
+                [1.912440521, -76.834945194],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.0, "stroke": true, "weight": 3}
+            ).addTo(map_9c0327f06ed5f992363b39fdfc285e9b);
+        
+    
+            circle_marker_4d239bf503f0bf00bece268034b329fd.bindTooltip(
+                `<div>
+                     Municipio: ALMAGUER
+Prestadores SI: 0
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_0bfa2f8c97edf1f0f75b99497d3e16f4 = L.circleMarker(
+                [2.329337283, -77.26314906],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.0, "stroke": true, "weight": 3}
+            ).addTo(map_9c0327f06ed5f992363b39fdfc285e9b);
+        
+    
+            circle_marker_0bfa2f8c97edf1f0f75b99497d3e16f4.bindTooltip(
+                `<div>
+                     Municipio: ARGELIA
+Prestadores SI: 0
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_73001c6eedaa18270d43f7ed187d6d57 = L.circleMarker(
+                [2.084732945, -77.208813302],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7.0, "stroke": true, "weight": 3}
+            ).addTo(map_9c0327f06ed5f992363b39fdfc285e9b);
+        
+    
+            circle_marker_73001c6eedaa18270d43f7ed187d6d57.bindTooltip(
+                `<div>
+                     Municipio: BALBOA
+Prestadores SI: 1
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_34c66b61bc07ef9522d4af2eca2f4b20 = L.circleMarker(
+                [1.853951938, -76.963374538],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 11.0, "stroke": true, "weight": 3}
+            ).addTo(map_9c0327f06ed5f992363b39fdfc285e9b);
+        
+    
+            circle_marker_34c66b61bc07ef9522d4af2eca2f4b20.bindTooltip(
+                `<div>
+                     Municipio: BOLÍVAR
+Prestadores SI: 3
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_40743bb53fd960c182773aa59b2ef0fb = L.circleMarker(
+                [2.988923885, -76.621589509],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.0, "stroke": true, "weight": 3}
+            ).addTo(map_9c0327f06ed5f992363b39fdfc285e9b);
+        
+    
+            circle_marker_40743bb53fd960c182773aa59b2ef0fb.bindTooltip(
+                `<div>
+                     Municipio: BUENOS AIRES
+Prestadores SI: 0
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_4d6535fb3f6cdb0cd21f7872015e8d03 = L.circleMarker(
+                [2.643209848, -76.701389144],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.0, "stroke": true, "weight": 3}
+            ).addTo(map_9c0327f06ed5f992363b39fdfc285e9b);
+        
+    
+            circle_marker_4d6535fb3f6cdb0cd21f7872015e8d03.bindTooltip(
+                `<div>
+                     Municipio: CAJIBÍO
+Prestadores SI: 0
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_69ddb61ed549f4f95bd6c841c1dad8cd = L.circleMarker(
+                [2.803845691, -76.427193766],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7.0, "stroke": true, "weight": 3}
+            ).addTo(map_9c0327f06ed5f992363b39fdfc285e9b);
+        
+    
+            circle_marker_69ddb61ed549f4f95bd6c841c1dad8cd.bindTooltip(
+                `<div>
+                     Municipio: CALDONO
+Prestadores SI: 1
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_0fb959b7422b5e8c686e6a9241ddb092 = L.circleMarker(
+                [3.062875557, -76.321279771],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.0, "stroke": true, "weight": 3}
+            ).addTo(map_9c0327f06ed5f992363b39fdfc285e9b);
+        
+    
+            circle_marker_0fb959b7422b5e8c686e6a9241ddb092.bindTooltip(
+                `<div>
+                     Municipio: CALOTO
+Prestadores SI: 0
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_2a6cf1881074e1e52b1209b3bab2d8d7 = L.circleMarker(
+                [3.136753606, -76.209645692],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 11.0, "stroke": true, "weight": 3}
+            ).addTo(map_9c0327f06ed5f992363b39fdfc285e9b);
+        
+    
+            circle_marker_2a6cf1881074e1e52b1209b3bab2d8d7.bindTooltip(
+                `<div>
+                     Municipio: CORINTO
+Prestadores SI: 3
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_8156d95748d255c13dbeb36233050098 = L.circleMarker(
+                [2.534488312, -77.005112065],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 9.0, "stroke": true, "weight": 3}
+            ).addTo(map_9c0327f06ed5f992363b39fdfc285e9b);
+        
+    
+            circle_marker_8156d95748d255c13dbeb36233050098.bindTooltip(
+                `<div>
+                     Municipio: EL TAMBO
+Prestadores SI: 2
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_e4cee81eec7ef665727fcb9451cb4039 = L.circleMarker(
+                [1.69453474, -77.087357234],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.0, "stroke": true, "weight": 3}
+            ).addTo(map_9c0327f06ed5f992363b39fdfc285e9b);
+        
+    
+            circle_marker_e4cee81eec7ef665727fcb9451cb4039.bindTooltip(
+                `<div>
+                     Municipio: FLORENCIA
+Prestadores SI: 0
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_3919f6a1763d85477f3c30e734fd7935 = L.circleMarker(
+                [3.144389993, -76.392348107],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 11.0, "stroke": true, "weight": 3}
+            ).addTo(map_9c0327f06ed5f992363b39fdfc285e9b);
+        
+    
+            circle_marker_3919f6a1763d85477f3c30e734fd7935.bindTooltip(
+                `<div>
+                     Municipio: GUACHENÉ
+Prestadores SI: 3
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_e54f292f0586ed9fd21401d49573635e = L.circleMarker(
+                [2.41326696, -77.690475305],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 9.0, "stroke": true, "weight": 3}
+            ).addTo(map_9c0327f06ed5f992363b39fdfc285e9b);
+        
+    
+            circle_marker_e54f292f0586ed9fd21401d49573635e.bindTooltip(
+                `<div>
+                     Municipio: GUAPI
+Prestadores SI: 2
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_d5f6ad107ac9e7c51d858e2be579016b = L.circleMarker(
+                [2.499058783, -76.137625312],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 9.0, "stroke": true, "weight": 3}
+            ).addTo(map_9c0327f06ed5f992363b39fdfc285e9b);
+        
+    
+            circle_marker_d5f6ad107ac9e7c51d858e2be579016b.bindTooltip(
+                `<div>
+                     Municipio: INZÁ
+Prestadores SI: 2
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_398c211b194d2b0b84ea67c32e9a68b5 = L.circleMarker(
+                [2.84981013, -76.31124919],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7.0, "stroke": true, "weight": 3}
+            ).addTo(map_9c0327f06ed5f992363b39fdfc285e9b);
+        
+    
+            circle_marker_398c211b194d2b0b84ea67c32e9a68b5.bindTooltip(
+                `<div>
+                     Municipio: JAMBALÓ
+Prestadores SI: 1
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_b15d3e22c5371f73e58676dc1af59fee = L.circleMarker(
+                [2.187473572, -76.78228032],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 9.0, "stroke": true, "weight": 3}
+            ).addTo(map_9c0327f06ed5f992363b39fdfc285e9b);
+        
+    
+            circle_marker_b15d3e22c5371f73e58676dc1af59fee.bindTooltip(
+                `<div>
+                     Municipio: LA SIERRA
+Prestadores SI: 2
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_1885c41066b9166b8413f3d8307e6914 = L.circleMarker(
+                [2.053933426, -76.758806204],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.0, "stroke": true, "weight": 3}
+            ).addTo(map_9c0327f06ed5f992363b39fdfc285e9b);
+        
+    
+            circle_marker_1885c41066b9166b8413f3d8307e6914.bindTooltip(
+                `<div>
+                     Municipio: LA VEGA
+Prestadores SI: 0
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_656e3f302636b74a9b561493414c9158 = L.circleMarker(
+                [2.95819877, -77.242121575],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.0, "stroke": true, "weight": 3}
+            ).addTo(map_9c0327f06ed5f992363b39fdfc285e9b);
+        
+    
+            circle_marker_656e3f302636b74a9b561493414c9158.bindTooltip(
+                `<div>
+                     Municipio: LÓPEZ DE MICAY
+Prestadores SI: 0
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_6b41ccae4d531fb29dd1792cdfef3abd = L.circleMarker(
+                [1.793825164, -77.180603812],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7.0, "stroke": true, "weight": 3}
+            ).addTo(map_9c0327f06ed5f992363b39fdfc285e9b);
+        
+    
+            circle_marker_6b41ccae4d531fb29dd1792cdfef3abd.bindTooltip(
+                `<div>
+                     Municipio: MERCADERES
+Prestadores SI: 1
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_9437537f3af143defac4f575a619018f = L.circleMarker(
+                [3.228235212, -76.216708274],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 11.0, "stroke": true, "weight": 3}
+            ).addTo(map_9c0327f06ed5f992363b39fdfc285e9b);
+        
+    
+            circle_marker_9437537f3af143defac4f575a619018f.bindTooltip(
+                `<div>
+                     Municipio: MIRANDA
+Prestadores SI: 3
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_f59461a656bb9fefcdab541cdc9c5670 = L.circleMarker(
+                [2.773663981, -76.746051522],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 9.0, "stroke": true, "weight": 3}
+            ).addTo(map_9c0327f06ed5f992363b39fdfc285e9b);
+        
+    
+            circle_marker_f59461a656bb9fefcdab541cdc9c5670.bindTooltip(
+                `<div>
+                     Municipio: MORALES
+Prestadores SI: 2
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_79c870705b0fd8d16ab03cb67117d585 = L.circleMarker(
+                [3.194730618, -76.336241803],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7.0, "stroke": true, "weight": 3}
+            ).addTo(map_9c0327f06ed5f992363b39fdfc285e9b);
+        
+    
+            circle_marker_79c870705b0fd8d16ab03cb67117d585.bindTooltip(
+                `<div>
+                     Municipio: PADILLA
+Prestadores SI: 1
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_768fd7f1f085d00e21be34b504c72c18 = L.circleMarker(
+                [2.733887702, -75.993682638],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.0, "stroke": true, "weight": 3}
+            ).addTo(map_9c0327f06ed5f992363b39fdfc285e9b);
+        
+    
+            circle_marker_768fd7f1f085d00e21be34b504c72c18.bindTooltip(
+                `<div>
+                     Municipio: PÁEZ
+Prestadores SI: 0
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_ca1ce69970572b511a5f986cf769b0b2 = L.circleMarker(
+                [2.157983906, -77.046576199],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 13.0, "stroke": true, "weight": 3}
+            ).addTo(map_9c0327f06ed5f992363b39fdfc285e9b);
+        
+    
+            circle_marker_ca1ce69970572b511a5f986cf769b0b2.bindTooltip(
+                `<div>
+                     Municipio: PATÍA
+Prestadores SI: 4
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_49f5f86f42e331863b9be02fbd9fd872 = L.circleMarker(
+                [1.054128816, -76.444327103],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.0, "stroke": true, "weight": 3}
+            ).addTo(map_9c0327f06ed5f992363b39fdfc285e9b);
+        
+    
+            circle_marker_49f5f86f42e331863b9be02fbd9fd872.bindTooltip(
+                `<div>
+                     Municipio: PIAMONTE
+Prestadores SI: 0
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_42feac2f2002e1c4ee3bb9b5b23d39d5 = L.circleMarker(
+                [2.702420026, -76.537704551],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.0, "stroke": true, "weight": 3}
+            ).addTo(map_9c0327f06ed5f992363b39fdfc285e9b);
+        
+    
+            circle_marker_42feac2f2002e1c4ee3bb9b5b23d39d5.bindTooltip(
+                `<div>
+                     Municipio: PIENDAMÓ - TUNÍA
+Prestadores SI: 0
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_2144c3a3dc6538f6182c0ef209500c77 = L.circleMarker(
+                [3.266724205, -76.41846353],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 11.0, "stroke": true, "weight": 3}
+            ).addTo(map_9c0327f06ed5f992363b39fdfc285e9b);
+        
+    
+            circle_marker_2144c3a3dc6538f6182c0ef209500c77.bindTooltip(
+                `<div>
+                     Municipio: PUERTO TEJADA
+Prestadores SI: 3
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_8bb47c221d5d1492a0750001d1cca705 = L.circleMarker(
+                [2.262153618, -76.448269377],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.0, "stroke": true, "weight": 3}
+            ).addTo(map_9c0327f06ed5f992363b39fdfc285e9b);
+        
+    
+            circle_marker_8bb47c221d5d1492a0750001d1cca705.bindTooltip(
+                `<div>
+                     Municipio: PURACÉ
+Prestadores SI: 0
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_f299abf28564e6552623b9a57adecb9a = L.circleMarker(
+                [2.260421954, -76.74582033],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7.0, "stroke": true, "weight": 3}
+            ).addTo(map_9c0327f06ed5f992363b39fdfc285e9b);
+        
+    
+            circle_marker_f299abf28564e6552623b9a57adecb9a.bindTooltip(
+                `<div>
+                     Municipio: ROSAS
+Prestadores SI: 1
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_0fa4a1e9b083a8d58ab63512e2dd0bd7 = L.circleMarker(
+                [1.856261815, -76.716524236],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.0, "stroke": true, "weight": 3}
+            ).addTo(map_9c0327f06ed5f992363b39fdfc285e9b);
+        
+    
+            circle_marker_0fa4a1e9b083a8d58ab63512e2dd0bd7.bindTooltip(
+                `<div>
+                     Municipio: SAN SEBASTIÁN
+Prestadores SI: 0
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_23506e5412ecd7b8628ee8e1bc9b902a = L.circleMarker(
+                [2.984467338, -76.498731453],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 47.0, "stroke": true, "weight": 3}
+            ).addTo(map_9c0327f06ed5f992363b39fdfc285e9b);
+        
+    
+            circle_marker_23506e5412ecd7b8628ee8e1bc9b902a.bindTooltip(
+                `<div>
+                     Municipio: SANTANDER DE QUILICHAO
+Prestadores SI: 21
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_a938463ae2503a0fed38ce321ea297fe = L.circleMarker(
+                [1.52002179, -76.538762806],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.0, "stroke": true, "weight": 3}
+            ).addTo(map_9c0327f06ed5f992363b39fdfc285e9b);
+        
+    
+            circle_marker_a938463ae2503a0fed38ce321ea297fe.bindTooltip(
+                `<div>
+                     Municipio: SANTA ROSA
+Prestadores SI: 0
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_3959bd7c4436671df8bf9c80c90cf0ff = L.circleMarker(
+                [2.651291894, -76.350573563],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 11.0, "stroke": true, "weight": 3}
+            ).addTo(map_9c0327f06ed5f992363b39fdfc285e9b);
+        
+    
+            circle_marker_3959bd7c4436671df8bf9c80c90cf0ff.bindTooltip(
+                `<div>
+                     Municipio: SILVIA
+Prestadores SI: 3
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_0b1da05acf4ffe6d27130cfa687e4639 = L.circleMarker(
+                [2.231820541, -76.611466326],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.0, "stroke": true, "weight": 3}
+            ).addTo(map_9c0327f06ed5f992363b39fdfc285e9b);
+        
+    
+            circle_marker_0b1da05acf4ffe6d27130cfa687e4639.bindTooltip(
+                `<div>
+                     Municipio: SOTARÁ PAISPAMBA
+Prestadores SI: 0
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_30af448d17eddb517fc256f9b2bc54bb = L.circleMarker(
+                [2.936865997, -76.745824296],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.0, "stroke": true, "weight": 3}
+            ).addTo(map_9c0327f06ed5f992363b39fdfc285e9b);
+        
+    
+            circle_marker_30af448d17eddb517fc256f9b2bc54bb.bindTooltip(
+                `<div>
+                     Municipio: SUÁREZ
+Prestadores SI: 0
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_31bdcbb7f091d18c7940b70039e9443f = L.circleMarker(
+                [2.057735184, -76.909939647],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.0, "stroke": true, "weight": 3}
+            ).addTo(map_9c0327f06ed5f992363b39fdfc285e9b);
+        
+    
+            circle_marker_31bdcbb7f091d18c7940b70039e9443f.bindTooltip(
+                `<div>
+                     Municipio: SUCRE
+Prestadores SI: 0
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_fa06ac275d26ec9b972b28a8241b1687 = L.circleMarker(
+                [2.369625312, -76.710519323],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7.0, "stroke": true, "weight": 3}
+            ).addTo(map_9c0327f06ed5f992363b39fdfc285e9b);
+        
+    
+            circle_marker_fa06ac275d26ec9b972b28a8241b1687.bindTooltip(
+                `<div>
+                     Municipio: TIMBÍO
+Prestadores SI: 1
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_cf9dcc2373be2bc62cf733e0cd402741 = L.circleMarker(
+                [2.699475127, -77.491315765],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 11.0, "stroke": true, "weight": 3}
+            ).addTo(map_9c0327f06ed5f992363b39fdfc285e9b);
+        
+    
+            circle_marker_cf9dcc2373be2bc62cf733e0cd402741.bindTooltip(
+                `<div>
+                     Municipio: TIMBIQUÍ
+Prestadores SI: 3
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_dad6b4708f828f292724979e825c79b7 = L.circleMarker(
+                [2.975771999, -76.203315664],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.0, "stroke": true, "weight": 3}
+            ).addTo(map_9c0327f06ed5f992363b39fdfc285e9b);
+        
+    
+            circle_marker_dad6b4708f828f292724979e825c79b7.bindTooltip(
+                `<div>
+                     Municipio: TORIBÍO
+Prestadores SI: 0
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_f81ab24c6d4100f4ae3cb0f93ca753fe = L.circleMarker(
+                [2.475213085, -76.39675937],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 9.0, "stroke": true, "weight": 3}
+            ).addTo(map_9c0327f06ed5f992363b39fdfc285e9b);
+        
+    
+            circle_marker_f81ab24c6d4100f4ae3cb0f93ca753fe.bindTooltip(
+                `<div>
+                     Municipio: TOTORÓ
+Prestadores SI: 2
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_0d1566d07f275eee0eabf6de5c6d3367 = L.circleMarker(
+                [3.180627317, -76.464455581],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7.0, "stroke": true, "weight": 3}
+            ).addTo(map_9c0327f06ed5f992363b39fdfc285e9b);
+        
+    
+            circle_marker_0d1566d07f275eee0eabf6de5c6d3367.bindTooltip(
+                `<div>
+                     Municipio: VILLA RICA
+Prestadores SI: 1
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_1deb33853ee1fe54007b66331569eaf4 = L.circleMarker(
+                [1.083605497, -77.206100743],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 123.0, "stroke": true, "weight": 3}
+            ).addTo(map_9c0327f06ed5f992363b39fdfc285e9b);
+        
+    
+            circle_marker_1deb33853ee1fe54007b66331569eaf4.bindTooltip(
+                `<div>
+                     Municipio: PASTO
+Prestadores SI: 59
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_5b4e71197e1b887b317540816374e733 = L.circleMarker(
+                [1.469854084, -77.068809472],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7.0, "stroke": true, "weight": 3}
+            ).addTo(map_9c0327f06ed5f992363b39fdfc285e9b);
+        
+    
+            circle_marker_5b4e71197e1b887b317540816374e733.bindTooltip(
+                `<div>
+                     Municipio: ALBÁN
+Prestadores SI: 1
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_afe58fc67a18a2f1ee746135039e2ccb = L.circleMarker(
+                [0.913431916, -77.695387307],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7.0, "stroke": true, "weight": 3}
+            ).addTo(map_9c0327f06ed5f992363b39fdfc285e9b);
+        
+    
+            circle_marker_afe58fc67a18a2f1ee746135039e2ccb.bindTooltip(
+                `<div>
+                     Municipio: ALDANA
+Prestadores SI: 1
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_fbd6c93bcacbde46dcddf52f7c20c969 = L.circleMarker(
+                [1.245254077, -77.53115777],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.0, "stroke": true, "weight": 3}
+            ).addTo(map_9c0327f06ed5f992363b39fdfc285e9b);
+        
+    
+            circle_marker_fbd6c93bcacbde46dcddf52f7c20c969.bindTooltip(
+                `<div>
+                     Municipio: ANCUYA
+Prestadores SI: 0
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_9bd5174a4efb3f372768b470e654d58b = L.circleMarker(
+                [1.480051172, -77.129850006],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.0, "stroke": true, "weight": 3}
+            ).addTo(map_9c0327f06ed5f992363b39fdfc285e9b);
+        
+    
+            circle_marker_9bd5174a4efb3f372768b470e654d58b.bindTooltip(
+                `<div>
+                     Municipio: ARBOLEDA
+Prestadores SI: 0
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_67744b92ba0e02ff2e5db6f863b9df40 = L.circleMarker(
+                [1.44563774, -78.156210724],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 13.0, "stroke": true, "weight": 3}
+            ).addTo(map_9c0327f06ed5f992363b39fdfc285e9b);
+        
+    
+            circle_marker_67744b92ba0e02ff2e5db6f863b9df40.bindTooltip(
+                `<div>
+                     Municipio: BARBACOAS
+Prestadores SI: 4
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_014abb867a969a48392f81053265f204 = L.circleMarker(
+                [1.593645287, -77.019993659],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.0, "stroke": true, "weight": 3}
+            ).addTo(map_9c0327f06ed5f992363b39fdfc285e9b);
+        
+    
+            circle_marker_014abb867a969a48392f81053265f204.bindTooltip(
+                `<div>
+                     Municipio: BELÉN
+Prestadores SI: 0
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_aeed0048d4bdf80cf8c83e790b8b2a52 = L.circleMarker(
+                [1.315215636, -77.116366395],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 11.0, "stroke": true, "weight": 3}
+            ).addTo(map_9c0327f06ed5f992363b39fdfc285e9b);
+        
+    
+            circle_marker_aeed0048d4bdf80cf8c83e790b8b2a52.bindTooltip(
+                `<div>
+                     Municipio: BUESACO
+Prestadores SI: 3
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_5a3104d8656fef4a15f5a6b84780eafc = L.circleMarker(
+                [1.636334379, -77.0473156],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7.0, "stroke": true, "weight": 3}
+            ).addTo(map_9c0327f06ed5f992363b39fdfc285e9b);
+        
+    
+            circle_marker_5a3104d8656fef4a15f5a6b84780eafc.bindTooltip(
+                `<div>
+                     Municipio: COLÓN
+Prestadores SI: 1
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_416b0b6186c264bcebb9ed2e16d53308 = L.circleMarker(
+                [1.209066732, -77.440639207],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.0, "stroke": true, "weight": 3}
+            ).addTo(map_9c0327f06ed5f992363b39fdfc285e9b);
+        
+    
+            circle_marker_416b0b6186c264bcebb9ed2e16d53308.bindTooltip(
+                `<div>
+                     Municipio: CONSACÁ
+Prestadores SI: 0
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_e01b0573f33f877bafb2139b45ffa62a = L.circleMarker(
+                [0.932667458, -77.528087314],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7.0, "stroke": true, "weight": 3}
+            ).addTo(map_9c0327f06ed5f992363b39fdfc285e9b);
+        
+    
+            circle_marker_e01b0573f33f877bafb2139b45ffa62a.bindTooltip(
+                `<div>
+                     Municipio: CONTADERO
+Prestadores SI: 1
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_c23f5cb205c2be207848d059c6289b42 = L.circleMarker(
+                [0.78274688, -77.368059034],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 9.0, "stroke": true, "weight": 3}
+            ).addTo(map_9c0327f06ed5f992363b39fdfc285e9b);
+        
+    
+            circle_marker_c23f5cb205c2be207848d059c6289b42.bindTooltip(
+                `<div>
+                     Municipio: CÓRDOBA
+Prestadores SI: 2
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_4479417dec818ee4ccfe86ff250f5a50 = L.circleMarker(
+                [0.875426999, -77.735916005],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.0, "stroke": true, "weight": 3}
+            ).addTo(map_9c0327f06ed5f992363b39fdfc285e9b);
+        
+    
+            circle_marker_4479417dec818ee4ccfe86ff250f5a50.bindTooltip(
+                `<div>
+                     Municipio: CUASPUD CARLOSAMA
+Prestadores SI: 0
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_662093ae30c914b8f75fb2e06c6a04f4 = L.circleMarker(
+                [0.944223274, -77.959584455],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 11.0, "stroke": true, "weight": 3}
+            ).addTo(map_9c0327f06ed5f992363b39fdfc285e9b);
+        
+    
+            circle_marker_662093ae30c914b8f75fb2e06c6a04f4.bindTooltip(
+                `<div>
+                     Municipio: CUMBAL
+Prestadores SI: 3
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_b1fe46e94182e49b8adf687d8ee13e92 = L.circleMarker(
+                [1.72559011, -77.592816372],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7.0, "stroke": true, "weight": 3}
+            ).addTo(map_9c0327f06ed5f992363b39fdfc285e9b);
+        
+    
+            circle_marker_b1fe46e94182e49b8adf687d8ee13e92.bindTooltip(
+                `<div>
+                     Municipio: CUMBITARA
+Prestadores SI: 1
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_5a03124f619eb8541f2470ca94a5494a = L.circleMarker(
+                [1.386497844, -77.26969022],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7.0, "stroke": true, "weight": 3}
+            ).addTo(map_9c0327f06ed5f992363b39fdfc285e9b);
+        
+    
+            circle_marker_5a03124f619eb8541f2470ca94a5494a.bindTooltip(
+                `<div>
+                     Municipio: CHACHAGÜÍ
+Prestadores SI: 1
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_6e16fb8b8423e5103c361fe67707a6de = L.circleMarker(
+                [2.216382295, -77.995332339],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.0, "stroke": true, "weight": 3}
+            ).addTo(map_9c0327f06ed5f992363b39fdfc285e9b);
+        
+    
+            circle_marker_6e16fb8b8423e5103c361fe67707a6de.bindTooltip(
+                `<div>
+                     Municipio: EL CHARCO
+Prestadores SI: 0
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_a8f055f2a72bd49bd59d68e4b915e4a5 = L.circleMarker(
+                [1.512283967, -77.430509342],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.0, "stroke": true, "weight": 3}
+            ).addTo(map_9c0327f06ed5f992363b39fdfc285e9b);
+        
+    
+            circle_marker_a8f055f2a72bd49bd59d68e4b915e4a5.bindTooltip(
+                `<div>
+                     Municipio: EL PEÑOL
+Prestadores SI: 0
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_e0d8d6264ddcc07bb0ac9e75d91a1818 = L.circleMarker(
+                [1.887689437, -77.483195889],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7.0, "stroke": true, "weight": 3}
+            ).addTo(map_9c0327f06ed5f992363b39fdfc285e9b);
+        
+    
+            circle_marker_e0d8d6264ddcc07bb0ac9e75d91a1818.bindTooltip(
+                `<div>
+                     Municipio: EL ROSARIO
+Prestadores SI: 1
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_d0295b1c1b9d9a73e1732d601eaa948c = L.circleMarker(
+                [1.409430207, -76.985269588],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7.0, "stroke": true, "weight": 3}
+            ).addTo(map_9c0327f06ed5f992363b39fdfc285e9b);
+        
+    
+            circle_marker_d0295b1c1b9d9a73e1732d601eaa948c.bindTooltip(
+                `<div>
+                     Municipio: EL TABLÓN DE GÓMEZ
+Prestadores SI: 1
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_cf62bac1dd11170deaaa652207e8b90d = L.circleMarker(
+                [1.43026376, -77.383115973],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 9.0, "stroke": true, "weight": 3}
+            ).addTo(map_9c0327f06ed5f992363b39fdfc285e9b);
+        
+    
+            circle_marker_cf62bac1dd11170deaaa652207e8b90d.bindTooltip(
+                `<div>
+                     Municipio: EL TAMBO
+Prestadores SI: 2
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_85920c05745e202cd5d978aa1201a024 = L.circleMarker(
+                [0.957786429, -77.395327805],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 9.0, "stroke": true, "weight": 3}
+            ).addTo(map_9c0327f06ed5f992363b39fdfc285e9b);
+        
+    
+            circle_marker_85920c05745e202cd5d978aa1201a024.bindTooltip(
+                `<div>
+                     Municipio: FUNES
+Prestadores SI: 2
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_c3bf8fa636bb8e54ebd25eac7fd457d0 = L.circleMarker(
+                [0.975037904, -77.737589414],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 9.0, "stroke": true, "weight": 3}
+            ).addTo(map_9c0327f06ed5f992363b39fdfc285e9b);
+        
+    
+            circle_marker_c3bf8fa636bb8e54ebd25eac7fd457d0.bindTooltip(
+                `<div>
+                     Municipio: GUACHUCAL
+Prestadores SI: 2
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_68292a6eaa00fe8e401dc6033ed5e2cb = L.circleMarker(
+                [1.151366658, -77.530113362],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 15.0, "stroke": true, "weight": 3}
+            ).addTo(map_9c0327f06ed5f992363b39fdfc285e9b);
+        
+    
+            circle_marker_68292a6eaa00fe8e401dc6033ed5e2cb.bindTooltip(
+                `<div>
+                     Municipio: GUAITARILLA
+Prestadores SI: 5
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_fc058db19ae4bc59c95b3c4b8e4c6599 = L.circleMarker(
+                [0.928642623, -77.582618827],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7.0, "stroke": true, "weight": 3}
+            ).addTo(map_9c0327f06ed5f992363b39fdfc285e9b);
+        
+    
+            circle_marker_fc058db19ae4bc59c95b3c4b8e4c6599.bindTooltip(
+                `<div>
+                     Municipio: GUALMATÁN
+Prestadores SI: 1
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_2ee6beebc8ebc1a0663118bb06c6e573 = L.circleMarker(
+                [0.980534037, -77.518657295],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7.0, "stroke": true, "weight": 3}
+            ).addTo(map_9c0327f06ed5f992363b39fdfc285e9b);
+        
+    
+            circle_marker_2ee6beebc8ebc1a0663118bb06c6e573.bindTooltip(
+                `<div>
+                     Municipio: ILES
+Prestadores SI: 1
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_d629907568ddd82817c17940d676beab = L.circleMarker(
+                [1.07287697, -77.501508644],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 9.0, "stroke": true, "weight": 3}
+            ).addTo(map_9c0327f06ed5f992363b39fdfc285e9b);
+        
+    
+            circle_marker_d629907568ddd82817c17940d676beab.bindTooltip(
+                `<div>
+                     Municipio: IMUÉS
+Prestadores SI: 2
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_f6809006d2db70ea59fdc0e575414a02 = L.circleMarker(
+                [0.497708465, -77.240476252],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 39.0, "stroke": true, "weight": 3}
+            ).addTo(map_9c0327f06ed5f992363b39fdfc285e9b);
+        
+    
+            circle_marker_f6809006d2db70ea59fdc0e575414a02.bindTooltip(
+                `<div>
+                     Municipio: IPIALES
+Prestadores SI: 17
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_e1164d8614c93b9268f9eb493f7daa77 = L.circleMarker(
+                [1.584175998, -76.923352621],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 11.0, "stroke": true, "weight": 3}
+            ).addTo(map_9c0327f06ed5f992363b39fdfc285e9b);
+        
+    
+            circle_marker_e1164d8614c93b9268f9eb493f7daa77.bindTooltip(
+                `<div>
+                     Municipio: LA CRUZ
+Prestadores SI: 3
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_0aa71fb835f3ba8824830d6a0c47f060 = L.circleMarker(
+                [1.338034371, -77.422930412],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 9.0, "stroke": true, "weight": 3}
+            ).addTo(map_9c0327f06ed5f992363b39fdfc285e9b);
+        
+    
+            circle_marker_0aa71fb835f3ba8824830d6a0c47f060.bindTooltip(
+                `<div>
+                     Municipio: LA FLORIDA
+Prestadores SI: 2
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_74e3198674c7cecced047fca88253a87 = L.circleMarker(
+                [1.541847847, -77.61781608],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 9.0, "stroke": true, "weight": 3}
+            ).addTo(map_9c0327f06ed5f992363b39fdfc285e9b);
+        
+    
+            circle_marker_74e3198674c7cecced047fca88253a87.bindTooltip(
+                `<div>
+                     Municipio: LA LLANADA
+Prestadores SI: 2
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_7bba8155dd7880e89cd6f36001b68e87 = L.circleMarker(
+                [2.56027333, -78.235066941],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7.0, "stroke": true, "weight": 3}
+            ).addTo(map_9c0327f06ed5f992363b39fdfc285e9b);
+        
+    
+            circle_marker_7bba8155dd7880e89cd6f36001b68e87.bindTooltip(
+                `<div>
+                     Municipio: LA TOLA
+Prestadores SI: 1
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_fe6f58eb9087c92f4599ab7d82d88277 = L.circleMarker(
+                [1.619697376, -77.142846218],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 19.0, "stroke": true, "weight": 3}
+            ).addTo(map_9c0327f06ed5f992363b39fdfc285e9b);
+        
+    
+            circle_marker_fe6f58eb9087c92f4599ab7d82d88277.bindTooltip(
+                `<div>
+                     Municipio: LA UNIÓN
+Prestadores SI: 7
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_51ed85ebd6ae72dece2a764f67324b70 = L.circleMarker(
+                [1.900862361, -77.31220073],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.0, "stroke": true, "weight": 3}
+            ).addTo(map_9c0327f06ed5f992363b39fdfc285e9b);
+        
+    
+            circle_marker_51ed85ebd6ae72dece2a764f67324b70.bindTooltip(
+                `<div>
+                     Municipio: LEIVA
+Prestadores SI: 0
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_571e297352cf837bc77dce1a3bc46e5a = L.circleMarker(
+                [1.395173084, -77.520937738],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 9.0, "stroke": true, "weight": 3}
+            ).addTo(map_9c0327f06ed5f992363b39fdfc285e9b);
+        
+    
+            circle_marker_571e297352cf837bc77dce1a3bc46e5a.bindTooltip(
+                `<div>
+                     Municipio: LINARES
+Prestadores SI: 2
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_a44e47181eb9c9917cf3ac400e84248a = L.circleMarker(
+                [1.672601269, -77.710544487],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 9.0, "stroke": true, "weight": 3}
+            ).addTo(map_9c0327f06ed5f992363b39fdfc285e9b);
+        
+    
+            circle_marker_a44e47181eb9c9917cf3ac400e84248a.bindTooltip(
+                `<div>
+                     Municipio: LOS ANDES
+Prestadores SI: 2
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_f9b2fc3277ec3ac04cb04790bbc06852 = L.circleMarker(
+                [1.906858429, -78.044736438],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.0, "stroke": true, "weight": 3}
+            ).addTo(map_9c0327f06ed5f992363b39fdfc285e9b);
+        
+    
+            circle_marker_f9b2fc3277ec3ac04cb04790bbc06852.bindTooltip(
+                `<div>
+                     Municipio: MAGÜÍ
+Prestadores SI: 0
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_cb39c8cae06ba8c0bcf81f6d2286f635 = L.circleMarker(
+                [1.155947016, -77.846646464],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7.0, "stroke": true, "weight": 3}
+            ).addTo(map_9c0327f06ed5f992363b39fdfc285e9b);
+        
+    
+            circle_marker_cb39c8cae06ba8c0bcf81f6d2286f635.bindTooltip(
+                `<div>
+                     Municipio: MALLAMA
+Prestadores SI: 1
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_5043a5816290893c32bb1df4129dbac7 = L.circleMarker(
+                [2.442493698, -78.438827004],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7.0, "stroke": true, "weight": 3}
+            ).addTo(map_9c0327f06ed5f992363b39fdfc285e9b);
+        
+    
+            circle_marker_5043a5816290893c32bb1df4129dbac7.bindTooltip(
+                `<div>
+                     Municipio: MOSQUERA
+Prestadores SI: 1
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_80ec326fa1241bf2587c293af91026fd = L.circleMarker(
+                [1.286775273, -77.352203665],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7.0, "stroke": true, "weight": 3}
+            ).addTo(map_9c0327f06ed5f992363b39fdfc285e9b);
+        
+    
+            circle_marker_80ec326fa1241bf2587c293af91026fd.bindTooltip(
+                `<div>
+                     Municipio: NARIÑO
+Prestadores SI: 1
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_63c6822940763d287a9750d94e893b41 = L.circleMarker(
+                [2.287856547, -78.31219024],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7.0, "stroke": true, "weight": 3}
+            ).addTo(map_9c0327f06ed5f992363b39fdfc285e9b);
+        
+    
+            circle_marker_63c6822940763d287a9750d94e893b41.bindTooltip(
+                `<div>
+                     Municipio: OLAYA HERRERA
+Prestadores SI: 1
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_5dd36808d572df09714feae2940c9a52 = L.circleMarker(
+                [1.029815854, -77.552349435],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7.0, "stroke": true, "weight": 3}
+            ).addTo(map_9c0327f06ed5f992363b39fdfc285e9b);
+        
+    
+            circle_marker_5dd36808d572df09714feae2940c9a52.bindTooltip(
+                `<div>
+                     Municipio: OSPINA
+Prestadores SI: 1
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_fbe17723bb8462b175541f00c495a693 = L.circleMarker(
+                [2.088531925, -78.591930987],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7.0, "stroke": true, "weight": 3}
+            ).addTo(map_9c0327f06ed5f992363b39fdfc285e9b);
+        
+    
+            circle_marker_fbe17723bb8462b175541f00c495a693.bindTooltip(
+                `<div>
+                     Municipio: FRANCISCO PIZARRO
+Prestadores SI: 1
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_407dd760a09dbf1c3d3a5f41f3cd9064 = L.circleMarker(
+                [1.735354202, -77.48134359],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7.0, "stroke": true, "weight": 3}
+            ).addTo(map_9c0327f06ed5f992363b39fdfc285e9b);
+        
+    
+            circle_marker_407dd760a09dbf1c3d3a5f41f3cd9064.bindTooltip(
+                `<div>
+                     Municipio: POLICARPA
+Prestadores SI: 1
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_f1d8c1e3479fbdadf72d669553fe2caf = L.circleMarker(
+                [0.785841088, -77.528704073],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.0, "stroke": true, "weight": 3}
+            ).addTo(map_9c0327f06ed5f992363b39fdfc285e9b);
+        
+    
+            circle_marker_f1d8c1e3479fbdadf72d669553fe2caf.bindTooltip(
+                `<div>
+                     Municipio: POTOSÍ
+Prestadores SI: 0
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_8f765e259f6835e3405ac91b9c84edf5 = L.circleMarker(
+                [1.232864821, -77.598442123],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.0, "stroke": true, "weight": 3}
+            ).addTo(map_9c0327f06ed5f992363b39fdfc285e9b);
+        
+    
+            circle_marker_8f765e259f6835e3405ac91b9c84edf5.bindTooltip(
+                `<div>
+                     Municipio: PROVIDENCIA
+Prestadores SI: 0
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_967af8cbf632ced096f6c0a44b7391ed = L.circleMarker(
+                [0.854351651, -77.350325234],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7.0, "stroke": true, "weight": 3}
+            ).addTo(map_9c0327f06ed5f992363b39fdfc285e9b);
+        
+    
+            circle_marker_967af8cbf632ced096f6c0a44b7391ed.bindTooltip(
+                `<div>
+                     Municipio: PUERRES
+Prestadores SI: 1
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_591dd9329d00ead511e928c043b1101e = L.circleMarker(
+                [0.916769831, -77.633369537],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 13.0, "stroke": true, "weight": 3}
+            ).addTo(map_9c0327f06ed5f992363b39fdfc285e9b);
+        
+    
+            circle_marker_591dd9329d00ead511e928c043b1101e.bindTooltip(
+                `<div>
+                     Municipio: PUPIALES
+Prestadores SI: 4
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_1907f71c5de55aef12b83df0cc3c2676 = L.circleMarker(
+                [1.147671848, -78.05811118],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7.0, "stroke": true, "weight": 3}
+            ).addTo(map_9c0327f06ed5f992363b39fdfc285e9b);
+        
+    
+            circle_marker_1907f71c5de55aef12b83df0cc3c2676.bindTooltip(
+                `<div>
+                     Municipio: RICAURTE
+Prestadores SI: 1
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_fc4de7e32ae60225b0bdb4c38d74dbc3 = L.circleMarker(
+                [1.897581156, -78.3811163],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7.0, "stroke": true, "weight": 3}
+            ).addTo(map_9c0327f06ed5f992363b39fdfc285e9b);
+        
+    
+            circle_marker_fc4de7e32ae60225b0bdb4c38d74dbc3.bindTooltip(
+                `<div>
+                     Municipio: ROBERTO PAYÁN
+Prestadores SI: 1
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_e3f0c32f5a74fe114d69b21709f9d6be = L.circleMarker(
+                [1.430555262, -77.691795591],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 13.0, "stroke": true, "weight": 3}
+            ).addTo(map_9c0327f06ed5f992363b39fdfc285e9b);
+        
+    
+            circle_marker_e3f0c32f5a74fe114d69b21709f9d6be.bindTooltip(
+                `<div>
+                     Municipio: SAMANIEGO
+Prestadores SI: 4
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_ab11f8b2ff37ab0123aece4e9064997c = L.circleMarker(
+                [1.288105409, -77.456700683],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 13.0, "stroke": true, "weight": 3}
+            ).addTo(map_9c0327f06ed5f992363b39fdfc285e9b);
+        
+    
+            circle_marker_ab11f8b2ff37ab0123aece4e9064997c.bindTooltip(
+                `<div>
+                     Municipio: SANDONÁ
+Prestadores SI: 4
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_728c67f1373c52757b4c1139c9428c01 = L.circleMarker(
+                [1.529782485, -77.020706625],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7.0, "stroke": true, "weight": 3}
+            ).addTo(map_9c0327f06ed5f992363b39fdfc285e9b);
+        
+    
+            circle_marker_728c67f1373c52757b4c1139c9428c01.bindTooltip(
+                `<div>
+                     Municipio: SAN BERNARDO
+Prestadores SI: 1
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_734597f1aabd4fb032dfb00ed23af2bb = L.circleMarker(
+                [1.542139582, -77.218726925],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 9.0, "stroke": true, "weight": 3}
+            ).addTo(map_9c0327f06ed5f992363b39fdfc285e9b);
+        
+    
+            circle_marker_734597f1aabd4fb032dfb00ed23af2bb.bindTooltip(
+                `<div>
+                     Municipio: SAN LORENZO
+Prestadores SI: 2
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_c16aa6e094922792d235f3ae2fc7325d = L.circleMarker(
+                [1.681576627, -76.975279793],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7.0, "stroke": true, "weight": 3}
+            ).addTo(map_9c0327f06ed5f992363b39fdfc285e9b);
+        
+    
+            circle_marker_c16aa6e094922792d235f3ae2fc7325d.bindTooltip(
+                `<div>
+                     Municipio: SAN PABLO
+Prestadores SI: 1
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_86ee6930b01ca884b06d96f074c38d49 = L.circleMarker(
+                [1.536823494, -77.101403249],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.0, "stroke": true, "weight": 3}
+            ).addTo(map_9c0327f06ed5f992363b39fdfc285e9b);
+        
+    
+            circle_marker_86ee6930b01ca884b06d96f074c38d49.bindTooltip(
+                `<div>
+                     Municipio: SAN PEDRO DE CARTAGO
+Prestadores SI: 0
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_2093d4bc90c942821f200fff5b386e15 = L.circleMarker(
+                [2.494420411, -77.982564611],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7.0, "stroke": true, "weight": 3}
+            ).addTo(map_9c0327f06ed5f992363b39fdfc285e9b);
+        
+    
+            circle_marker_2093d4bc90c942821f200fff5b386e15.bindTooltip(
+                `<div>
+                     Municipio: SANTA BÁRBARA
+Prestadores SI: 1
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_ef97f66140375f476e5af8e95e6f979c = L.circleMarker(
+                [1.285179376, -77.744574404],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 9.0, "stroke": true, "weight": 3}
+            ).addTo(map_9c0327f06ed5f992363b39fdfc285e9b);
+        
+    
+            circle_marker_ef97f66140375f476e5af8e95e6f979c.bindTooltip(
+                `<div>
+                     Municipio: SANTACRUZ
+Prestadores SI: 2
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_ea70e37048b31f3a5ef39b0bbad9a772 = L.circleMarker(
+                [1.045287475, -77.71810954],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7.0, "stroke": true, "weight": 3}
+            ).addTo(map_9c0327f06ed5f992363b39fdfc285e9b);
+        
+    
+            circle_marker_ea70e37048b31f3a5ef39b0bbad9a772.bindTooltip(
+                `<div>
+                     Municipio: SAPUYES
+Prestadores SI: 1
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_64a522231605362cd46c0a0f5b6a0428 = L.circleMarker(
+                [1.591661392, -77.325253155],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7.0, "stroke": true, "weight": 3}
+            ).addTo(map_9c0327f06ed5f992363b39fdfc285e9b);
+        
+    
+            circle_marker_64a522231605362cd46c0a0f5b6a0428.bindTooltip(
+                `<div>
+                     Municipio: TAMINANGO
+Prestadores SI: 1
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_51636703963f6e4fee5a1e6433e5ab9c = L.circleMarker(
+                [1.064078111, -77.350634907],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7.0, "stroke": true, "weight": 3}
+            ).addTo(map_9c0327f06ed5f992363b39fdfc285e9b);
+        
+    
+            circle_marker_51636703963f6e4fee5a1e6433e5ab9c.bindTooltip(
+                `<div>
+                     Municipio: TANGUA
+Prestadores SI: 1
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_8b1aab214dc2669eeff669070b32a2ab = L.circleMarker(
+                [1.574550638, -78.615409629],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.0, "stroke": true, "weight": 3}
+            ).addTo(map_9c0327f06ed5f992363b39fdfc285e9b);
+        
+    
+            circle_marker_8b1aab214dc2669eeff669070b32a2ab.bindTooltip(
+                `<div>
+                     Municipio: SAN ANDRÉS DE TUMACO
+Prestadores SI: 0
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_c3c105c05f43e220d641f65dbbe3871b = L.circleMarker(
+                [1.134440523, -77.63073238],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 13.0, "stroke": true, "weight": 3}
+            ).addTo(map_9c0327f06ed5f992363b39fdfc285e9b);
+        
+    
+            circle_marker_c3c105c05f43e220d641f65dbbe3871b.bindTooltip(
+                `<div>
+                     Municipio: TÚQUERRES
+Prestadores SI: 4
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_dc3b8282bacc02c6b65288f06a6cc353 = L.circleMarker(
+                [1.125547916, -77.424675688],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 13.0, "stroke": true, "weight": 3}
+            ).addTo(map_9c0327f06ed5f992363b39fdfc285e9b);
+        
+    
+            circle_marker_dc3b8282bacc02c6b65288f06a6cc353.bindTooltip(
+                `<div>
+                     Municipio: YACUANQUER
+Prestadores SI: 4
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_47575286dfdb90518b1897580945df5a = L.circleMarker(
+                [3.399043723, -76.576492589],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 345.0, "stroke": true, "weight": 3}
+            ).addTo(map_9c0327f06ed5f992363b39fdfc285e9b);
+        
+    
+            circle_marker_47575286dfdb90518b1897580945df5a.bindTooltip(
+                `<div>
+                     Municipio: CALI
+Prestadores SI: 170
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_d864d5d98a24aaa8d673de04de335d7d = L.circleMarker(
+                [4.6788971, -75.782979317],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7.0, "stroke": true, "weight": 3}
+            ).addTo(map_9c0327f06ed5f992363b39fdfc285e9b);
+        
+    
+            circle_marker_d864d5d98a24aaa8d673de04de335d7d.bindTooltip(
+                `<div>
+                     Municipio: ALCALÁ
+Prestadores SI: 1
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_5fb22917f59925caa52e292e286cb692 = L.circleMarker(
+                [4.153314228, -76.160633411],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 9.0, "stroke": true, "weight": 3}
+            ).addTo(map_9c0327f06ed5f992363b39fdfc285e9b);
+        
+    
+            circle_marker_5fb22917f59925caa52e292e286cb692.bindTooltip(
+                `<div>
+                     Municipio: ANDALUCÍA
+Prestadores SI: 2
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_c11d98cb28efeaa9697d6e24c987162a = L.circleMarker(
+                [4.795927292, -76.029630488],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7.0, "stroke": true, "weight": 3}
+            ).addTo(map_9c0327f06ed5f992363b39fdfc285e9b);
+        
+    
+            circle_marker_c11d98cb28efeaa9697d6e24c987162a.bindTooltip(
+                `<div>
+                     Municipio: ANSERMANUEVO
+Prestadores SI: 1
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_53b56472cdbadd47ead19d805448e756 = L.circleMarker(
+                [4.704287864, -76.141649985],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.0, "stroke": true, "weight": 3}
+            ).addTo(map_9c0327f06ed5f992363b39fdfc285e9b);
+        
+    
+            circle_marker_53b56472cdbadd47ead19d805448e756.bindTooltip(
+                `<div>
+                     Municipio: ARGELIA
+Prestadores SI: 0
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_6a1d097fa5fadb69a11088510f42bcf9 = L.circleMarker(
+                [4.393118861, -76.349820385],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 11.0, "stroke": true, "weight": 3}
+            ).addTo(map_9c0327f06ed5f992363b39fdfc285e9b);
+        
+    
+            circle_marker_6a1d097fa5fadb69a11088510f42bcf9.bindTooltip(
+                `<div>
+                     Municipio: BOLÍVAR
+Prestadores SI: 3
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_23e4aa768f17da78922c515368189837 = L.circleMarker(
+                [3.493340766, -77.118728315],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 37.0, "stroke": true, "weight": 3}
+            ).addTo(map_9c0327f06ed5f992363b39fdfc285e9b);
+        
+    
+            circle_marker_23e4aa768f17da78922c515368189837.bindTooltip(
+                `<div>
+                     Municipio: BUENAVENTURA
+Prestadores SI: 16
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_0b73d002b277f2354fff60fc79182c5b = L.circleMarker(
+                [3.819854318, -75.983124185],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 25.0, "stroke": true, "weight": 3}
+            ).addTo(map_9c0327f06ed5f992363b39fdfc285e9b);
+        
+    
+            circle_marker_0b73d002b277f2354fff60fc79182c5b.bindTooltip(
+                `<div>
+                     Municipio: GUADALAJARA DE BUGA
+Prestadores SI: 10
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_d7c40ba6db70d3fb67172c5eaaf595b0 = L.circleMarker(
+                [4.196852991, -76.089610303],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.0, "stroke": true, "weight": 3}
+            ).addTo(map_9c0327f06ed5f992363b39fdfc285e9b);
+        
+    
+            circle_marker_d7c40ba6db70d3fb67172c5eaaf595b0.bindTooltip(
+                `<div>
+                     Municipio: BUGALAGRANDE
+Prestadores SI: 0
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_df04baadc19d86ffcc0dd45d9d53cd53 = L.circleMarker(
+                [4.308997973, -75.836725668],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 9.0, "stroke": true, "weight": 3}
+            ).addTo(map_9c0327f06ed5f992363b39fdfc285e9b);
+        
+    
+            circle_marker_df04baadc19d86ffcc0dd45d9d53cd53.bindTooltip(
+                `<div>
+                     Municipio: CAICEDONIA
+Prestadores SI: 2
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_63cad691a70bf1ee436e3e6dbff288ab = L.circleMarker(
+                [3.923271619, -76.642604838],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7.0, "stroke": true, "weight": 3}
+            ).addTo(map_9c0327f06ed5f992363b39fdfc285e9b);
+        
+    
+            circle_marker_63cad691a70bf1ee436e3e6dbff288ab.bindTooltip(
+                `<div>
+                     Municipio: CALIMA
+Prestadores SI: 1
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_e07706826083773b1d2445a47d8dbf9a = L.circleMarker(
+                [3.382091564, -76.383176631],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 11.0, "stroke": true, "weight": 3}
+            ).addTo(map_9c0327f06ed5f992363b39fdfc285e9b);
+        
+    
+            circle_marker_e07706826083773b1d2445a47d8dbf9a.bindTooltip(
+                `<div>
+                     Municipio: CANDELARIA
+Prestadores SI: 3
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_07f6122c2eeddbd39430fb26c36db5b6 = L.circleMarker(
+                [4.70684716, -75.917908459],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 49.0, "stroke": true, "weight": 3}
+            ).addTo(map_9c0327f06ed5f992363b39fdfc285e9b);
+        
+    
+            circle_marker_07f6122c2eeddbd39430fb26c36db5b6.bindTooltip(
+                `<div>
+                     Municipio: CARTAGO
+Prestadores SI: 22
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_e32e93a4a55ead77f9443c21deb0cf64 = L.circleMarker(
+                [3.649822218, -76.720393465],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 11.0, "stroke": true, "weight": 3}
+            ).addTo(map_9c0327f06ed5f992363b39fdfc285e9b);
+        
+    
+            circle_marker_e32e93a4a55ead77f9443c21deb0cf64.bindTooltip(
+                `<div>
+                     Municipio: DAGUA
+Prestadores SI: 3
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_22fbf37b4728ecba931747190984841a = L.circleMarker(
+                [4.917562873, -76.066010008],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.0, "stroke": true, "weight": 3}
+            ).addTo(map_9c0327f06ed5f992363b39fdfc285e9b);
+        
+    
+            circle_marker_22fbf37b4728ecba931747190984841a.bindTooltip(
+                `<div>
+                     Municipio: EL ÁGUILA
+Prestadores SI: 0
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_1dc83128c904a96193452bf5465a2022 = L.circleMarker(
+                [4.756063701, -76.215028258],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.0, "stroke": true, "weight": 3}
+            ).addTo(map_9c0327f06ed5f992363b39fdfc285e9b);
+        
+    
+            circle_marker_1dc83128c904a96193452bf5465a2022.bindTooltip(
+                `<div>
+                     Municipio: EL CAIRO
+Prestadores SI: 0
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_d2591bbfb895ffe1294ca488fbab279f = L.circleMarker(
+                [3.656072873, -76.308417837],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 15.0, "stroke": true, "weight": 3}
+            ).addTo(map_9c0327f06ed5f992363b39fdfc285e9b);
+        
+    
+            circle_marker_d2591bbfb895ffe1294ca488fbab279f.bindTooltip(
+                `<div>
+                     Municipio: EL CERRITO
+Prestadores SI: 5
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_555d976385468855da52f5368bd611dd = L.circleMarker(
+                [4.539979729, -76.287627013],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.0, "stroke": true, "weight": 3}
+            ).addTo(map_9c0327f06ed5f992363b39fdfc285e9b);
+        
+    
+            circle_marker_555d976385468855da52f5368bd611dd.bindTooltip(
+                `<div>
+                     Municipio: EL DOVIO
+Prestadores SI: 0
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_d28212046c18ab41cbf9417c29054207 = L.circleMarker(
+                [3.304104295, -76.164773067],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 9.0, "stroke": true, "weight": 3}
+            ).addTo(map_9c0327f06ed5f992363b39fdfc285e9b);
+        
+    
+            circle_marker_d28212046c18ab41cbf9417c29054207.bindTooltip(
+                `<div>
+                     Municipio: FLORIDA
+Prestadores SI: 2
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_f1950acd8cc3cb140a1133ae4306f95b = L.circleMarker(
+                [3.74410441, -76.19082004],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7.0, "stroke": true, "weight": 3}
+            ).addTo(map_9c0327f06ed5f992363b39fdfc285e9b);
+        
+    
+            circle_marker_f1950acd8cc3cb140a1133ae4306f95b.bindTooltip(
+                `<div>
+                     Municipio: GINEBRA
+Prestadores SI: 1
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_9226ad663c5ec75128556ae19f86c865 = L.circleMarker(
+                [3.759414991, -76.345182773],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 15.0, "stroke": true, "weight": 3}
+            ).addTo(map_9c0327f06ed5f992363b39fdfc285e9b);
+        
+    
+            circle_marker_9226ad663c5ec75128556ae19f86c865.bindTooltip(
+                `<div>
+                     Municipio: GUACARÍ
+Prestadores SI: 5
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_acb590a1f15e32336a6604b75784f74b = L.circleMarker(
+                [3.213892389, -76.627604178],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 25.0, "stroke": true, "weight": 3}
+            ).addTo(map_9c0327f06ed5f992363b39fdfc285e9b);
+        
+    
+            circle_marker_acb590a1f15e32336a6604b75784f74b.bindTooltip(
+                `<div>
+                     Municipio: JAMUNDÍ
+Prestadores SI: 10
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_bbb892a5c0589e87115d8af9225a89ad = L.circleMarker(
+                [3.694303106, -76.589899052],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 9.0, "stroke": true, "weight": 3}
+            ).addTo(map_9c0327f06ed5f992363b39fdfc285e9b);
+        
+    
+            circle_marker_bbb892a5c0589e87115d8af9225a89ad.bindTooltip(
+                `<div>
+                     Municipio: LA CUMBRE
+Prestadores SI: 2
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_e82efe15aae24c0ffd80e51914353728 = L.circleMarker(
+                [4.537937391, -76.103289827],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 19.0, "stroke": true, "weight": 3}
+            ).addTo(map_9c0327f06ed5f992363b39fdfc285e9b);
+        
+    
+            circle_marker_e82efe15aae24c0ffd80e51914353728.bindTooltip(
+                `<div>
+                     Municipio: LA UNIÓN
+Prestadores SI: 7
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_18bfcb032951316ca965d2086250c3d6 = L.circleMarker(
+                [4.483511142, -75.966773027],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7.0, "stroke": true, "weight": 3}
+            ).addTo(map_9c0327f06ed5f992363b39fdfc285e9b);
+        
+    
+            circle_marker_18bfcb032951316ca965d2086250c3d6.bindTooltip(
+                `<div>
+                     Municipio: LA VICTORIA
+Prestadores SI: 1
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_dc232879e95bf19b23868c575d997e8a = L.circleMarker(
+                [4.597588666, -75.949199698],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7.0, "stroke": true, "weight": 3}
+            ).addTo(map_9c0327f06ed5f992363b39fdfc285e9b);
+        
+    
+            circle_marker_dc232879e95bf19b23868c575d997e8a.bindTooltip(
+                `<div>
+                     Municipio: OBANDO
+Prestadores SI: 1
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_1729d66767b37f56e5af738b76736f42 = L.circleMarker(
+                [3.558392876, -76.227799721],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 53.0, "stroke": true, "weight": 3}
+            ).addTo(map_9c0327f06ed5f992363b39fdfc285e9b);
+        
+    
+            circle_marker_1729d66767b37f56e5af738b76736f42.bindTooltip(
+                `<div>
+                     Municipio: PALMIRA
+Prestadores SI: 24
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_1e4e242225f9589e0f3dcc47d2222ef1 = L.circleMarker(
+                [3.42063665, -76.178418412],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7.0, "stroke": true, "weight": 3}
+            ).addTo(map_9c0327f06ed5f992363b39fdfc285e9b);
+        
+    
+            circle_marker_1e4e242225f9589e0f3dcc47d2222ef1.bindTooltip(
+                `<div>
+                     Municipio: PRADERA
+Prestadores SI: 1
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_791cfbf7f49d874d9793f51941b8f5f9 = L.circleMarker(
+                [3.806494973, -76.534898533],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 11.0, "stroke": true, "weight": 3}
+            ).addTo(map_9c0327f06ed5f992363b39fdfc285e9b);
+        
+    
+            circle_marker_791cfbf7f49d874d9793f51941b8f5f9.bindTooltip(
+                `<div>
+                     Municipio: RESTREPO
+Prestadores SI: 3
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_88190368854f044476cfc6f24faf13ab = L.circleMarker(
+                [4.109500298, -76.371054433],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7.0, "stroke": true, "weight": 3}
+            ).addTo(map_9c0327f06ed5f992363b39fdfc285e9b);
+        
+    
+            circle_marker_88190368854f044476cfc6f24faf13ab.bindTooltip(
+                `<div>
+                     Municipio: RIOFRÍO
+Prestadores SI: 1
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_cc439c5d5e48411aa5ca708ae8ff9221 = L.circleMarker(
+                [4.443571848, -76.168242493],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 13.0, "stroke": true, "weight": 3}
+            ).addTo(map_9c0327f06ed5f992363b39fdfc285e9b);
+        
+    
+            circle_marker_cc439c5d5e48411aa5ca708ae8ff9221.bindTooltip(
+                `<div>
+                     Municipio: ROLDANILLO
+Prestadores SI: 4
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_7954f9006ee0cf0269acb8a94a4687b8 = L.circleMarker(
+                [3.98143244, -76.208361678],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.0, "stroke": true, "weight": 3}
+            ).addTo(map_9c0327f06ed5f992363b39fdfc285e9b);
+        
+    
+            circle_marker_7954f9006ee0cf0269acb8a94a4687b8.bindTooltip(
+                `<div>
+                     Municipio: SAN PEDRO
+Prestadores SI: 0
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_0e96181040e3a538b06779479c33997d = L.circleMarker(
+                [4.193411919, -75.888181633],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7.0, "stroke": true, "weight": 3}
+            ).addTo(map_9c0327f06ed5f992363b39fdfc285e9b);
+        
+    
+            circle_marker_0e96181040e3a538b06779479c33997d.bindTooltip(
+                `<div>
+                     Municipio: SEVILLA
+Prestadores SI: 1
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_a3ebf4867c9185e19dbfb72b6fee8bcc = L.circleMarker(
+                [4.638421279, -76.081061761],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7.0, "stroke": true, "weight": 3}
+            ).addTo(map_9c0327f06ed5f992363b39fdfc285e9b);
+        
+    
+            circle_marker_a3ebf4867c9185e19dbfb72b6fee8bcc.bindTooltip(
+                `<div>
+                     Municipio: TORO
+Prestadores SI: 1
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_6ec73c81bf8142501fce67cf80d78c9f = L.circleMarker(
+                [4.233268116, -76.342926988],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7.0, "stroke": true, "weight": 3}
+            ).addTo(map_9c0327f06ed5f992363b39fdfc285e9b);
+        
+    
+            circle_marker_6ec73c81bf8142501fce67cf80d78c9f.bindTooltip(
+                `<div>
+                     Municipio: TRUJILLO
+Prestadores SI: 1
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_f9095ac8a2d4ed13d25f8722541fdf89 = L.circleMarker(
+                [4.02840797, -76.032503793],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 41.0, "stroke": true, "weight": 3}
+            ).addTo(map_9c0327f06ed5f992363b39fdfc285e9b);
+        
+    
+            circle_marker_f9095ac8a2d4ed13d25f8722541fdf89.bindTooltip(
+                `<div>
+                     Municipio: TULUÁ
+Prestadores SI: 18
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_989315e0d331948107102fb8ec8d227b = L.circleMarker(
+                [4.707718947, -75.778359026],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.0, "stroke": true, "weight": 3}
+            ).addTo(map_9c0327f06ed5f992363b39fdfc285e9b);
+        
+    
+            circle_marker_989315e0d331948107102fb8ec8d227b.bindTooltip(
+                `<div>
+                     Municipio: ULLOA
+Prestadores SI: 0
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_eb31decde5e10ba625930509eb3787ae = L.circleMarker(
+                [4.644242641, -76.259244825],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.0, "stroke": true, "weight": 3}
+            ).addTo(map_9c0327f06ed5f992363b39fdfc285e9b);
+        
+    
+            circle_marker_eb31decde5e10ba625930509eb3787ae.bindTooltip(
+                `<div>
+                     Municipio: VERSALLES
+Prestadores SI: 0
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_c53e59be0397b7826c4aba633da504fe = L.circleMarker(
+                [3.74365889, -76.470647175],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.0, "stroke": true, "weight": 3}
+            ).addTo(map_9c0327f06ed5f992363b39fdfc285e9b);
+        
+    
+            circle_marker_c53e59be0397b7826c4aba633da504fe.bindTooltip(
+                `<div>
+                     Municipio: VIJES
+Prestadores SI: 0
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_05b0f6fbbe3e1038d7cccd7b5b52c395 = L.circleMarker(
+                [3.904130354, -76.390804349],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 9.0, "stroke": true, "weight": 3}
+            ).addTo(map_9c0327f06ed5f992363b39fdfc285e9b);
+        
+    
+            circle_marker_05b0f6fbbe3e1038d7cccd7b5b52c395.bindTooltip(
+                `<div>
+                     Municipio: YOTOCO
+Prestadores SI: 2
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_8657af8da4d507b1d160e08755184a82 = L.circleMarker(
+                [3.595913669, -76.5109879],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 11.0, "stroke": true, "weight": 3}
+            ).addTo(map_9c0327f06ed5f992363b39fdfc285e9b);
+        
+    
+            circle_marker_8657af8da4d507b1d160e08755184a82.bindTooltip(
+                `<div>
+                     Municipio: YUMBO
+Prestadores SI: 3
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_8d0ab5a25643f57f5a1124221eec109b = L.circleMarker(
+                [4.35359875, -76.050653363],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 19.0, "stroke": true, "weight": 3}
+            ).addTo(map_9c0327f06ed5f992363b39fdfc285e9b);
+        
+    
+            circle_marker_8d0ab5a25643f57f5a1124221eec109b.bindTooltip(
+                `<div>
+                     Municipio: ZARZAL
+Prestadores SI: 7
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            tile_layer_3e1cd43698fc794534f35295607e2752.addTo(map_9c0327f06ed5f992363b39fdfc285e9b);
+        
+</script>
+</html>
